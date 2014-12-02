@@ -4,15 +4,17 @@ var minifyCSS = require('gulp-minify-css');
 var browserSync = require('browser-sync');
 var spawn = require('child_process').spawn;
 
-gulp.task('build', function() {
-    return spawn('jekyll', ['build']);
+gulp.task('build', function(done) {
+    return spawn('jekyll', ['build'])
+        .on('close', done); // build task only returns when it's finished building.
 });
 
 gulp.task('sass', function() {
     return gulp.src('_sass/main.scss')
         .pipe(sass())
         .pipe(minifyCSS())
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('_site/css'));
 });
 
 gulp.task('browser-sync', ['sass', 'build'], function() {
