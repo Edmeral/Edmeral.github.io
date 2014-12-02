@@ -23,3 +23,10 @@ gulp.task('browser-sync', ['sass', 'build'], function() {
         port:7890,
     });
 });
+
+gulp.task('watch', function() {
+    gulp.watch(['_sass/*'], ['sass', browserSync.reload]);
+    gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['build', browserSync.reload]);
+});
+
+gulp.task('default', ['browser-sync', 'watch']);
