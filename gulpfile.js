@@ -14,3 +14,12 @@ gulp.task('sass', function() {
         .pipe(minifyCSS())
         .pipe(gulp.dest('css'));
 });
+
+gulp.task('browser-sync', ['sass', 'build'], function() {
+    browserSync({
+        server: {
+            baseDir: '_site'
+        },
+        port:7890,
+    });
+});
