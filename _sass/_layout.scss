@@ -2,6 +2,14 @@
  * Site header
  */
 .site-header {
+    padding-top: 20px;
+    img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
