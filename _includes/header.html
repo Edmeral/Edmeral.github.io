@@ -2,8 +2,10 @@
 
   <div class="wrapper">
 
-    <!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+    
     <img src="/images/round.png" alt="">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,13 +16,13 @@
         </svg>
       </a>
 
-      <div class="trigger">
+      <!-- <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-      </div>
+      </div> -->
     </nav>
 
   </div>
