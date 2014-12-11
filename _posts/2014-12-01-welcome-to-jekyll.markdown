@@ -18,6 +18,30 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
+{% highlight js %}
+var fs = require('fs');
+var os = require('os');
+var blessed = require('blessed');
+var multiline = require('multiline');
+
+if (os.platform() === 'win32') {
+  console.log('**************************************************************');
+  console.log('Hackathon Starter Generator has been disabled on Windows until');
+  console.log('https://github.com/chjj/blessed is fixed or until I find a');
+  console.log('better CLI module.');
+  console.log('**************************************************************');
+  process.exit();
+}
+var screen = blessed.screen({
+  autoPadding: true
+});
+
+screen.key('q', function() {
+  process.exit(0);
+});
+
+{% endhighlight %}
+
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
 [jekyll]:      http://jekyllrb.com
