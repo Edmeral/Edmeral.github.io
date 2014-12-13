@@ -106,7 +106,21 @@
     }
 }
 
+.social-header {
+    font-size: 24px;
+    margin-top: 20px;
+    width: 100px;
+    margin: auto;
 
+
+    a {
+        color: $text-color-light;
+    }
+    a:hover {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
 
 /**
  * Site footer
