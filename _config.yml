@@ -11,5 +11,5 @@ twitter_username: Edmeral
 github_username:  Edmeral
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json"]
