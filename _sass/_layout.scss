@@ -132,6 +132,11 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    h5 {
+        font-weight: 300;
+        text-align: center;
+    }
 }
 
 .footer-heading {
@@ -234,7 +239,7 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
-    
+
     a h1 {
         color: $text-color;
     }
