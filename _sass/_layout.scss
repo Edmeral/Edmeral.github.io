@@ -234,6 +234,14 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    
+    a h1 {
+        color: $text-color;
+    }
+
+    a:hover {
+       text-decoration: none;
+    }
 }
 
 .post-title {
