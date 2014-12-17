@@ -5,6 +5,13 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
+    a h1 {
+        color: $text-color;
+    }
+
+    a:hover {
+       text-decoration: none;
+    }
     img {
         width: 100px;
         height: 100px;
