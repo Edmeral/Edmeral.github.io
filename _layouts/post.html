@@ -10,8 +10,9 @@ layout: defaultPost
 
   <article class="post-content">
     {{ content }}
-    
-    <div id="disqus_thread"></div>
+  </article>
+
+  <div id="disqus_thread"></div>
     <script>
           var disqus_shortname = 'aissamme';
           var disqus_identifier = '{{ page.url | prepend: site.url }}/';
@@ -23,7 +24,5 @@ layout: defaultPost
               dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
           })();
-      </script>
-  </article>
-
+    </script>
 </div>
