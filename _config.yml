@@ -13,3 +13,6 @@ github_username:  Edmeral
 # Build settings
 markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+gems:
+  - jemoji
