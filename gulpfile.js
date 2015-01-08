@@ -23,7 +23,6 @@ gulp.task('browser-sync', ['sass', 'build'], function() {
             baseDir: '_site'
         },
         port:7890,
-        browser: "google-chrome-unstable"
     });
 });
 
