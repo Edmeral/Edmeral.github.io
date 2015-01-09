@@ -10,6 +10,16 @@ title: "How to create a connected mini weather station using a Raspberry pi and 
 
 <br>
 
+> This is photo has nothing to do with the subjet of the article.
 
+<br>
+
+Here is what you'll need:
+
+* An Arduino board (an Arduino UNO would be enough)
+* DHT11 sensor
+* 10K resistor
+* some jumper wire
+* Time
 
 The goal to this tutorial is to create something [this](http://weather.aissam.me):
