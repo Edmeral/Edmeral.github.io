@@ -2,7 +2,7 @@
 title: Aissam BELHACHMI
 email: edmeral.aissam@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Still searching for an original description to put here
+  Still searching for an original description
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://aissam.me" # the base hostname & protocol for your site
 twitter_username: Edmeral
