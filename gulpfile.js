@@ -22,7 +22,8 @@ gulp.task('browser-sync', ['sass', 'build'], function() {
         server: {
             baseDir: '_site'
         },
-        port:7890,
+        browser: "nothing",
+        port:7890
     });
 });
 
