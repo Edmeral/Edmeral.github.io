@@ -30,7 +30,7 @@
     jQuery('.rrssb-buttons').each(function(index) {
       var self = jQuery(this);
       var numOfButtons = jQuery('li:visible', self).length;
-      var initBtnWidth = 100 / numOfButtons - 30;
+      var initBtnWidth = 100 / numOfButtons;
 
       // set initial width of buttons
       jQuery('li', self).css('width', initBtnWidth + '%').attr('data-initwidth',initBtnWidth);
@@ -48,9 +48,9 @@
 
       // enlarge buttons if they get wide enough
       if (buttonWidth > 170 && smallBtnCount < 1) {
-        jQuery(self).addClass('large-format');
+        jQuery(self).addClass('medium-format');
       } else {
-        jQuery(self).removeClass('large-format');
+        jQuery(self).removeClass('medium-format');
       }
 
       if (containerWidth < 200) {
