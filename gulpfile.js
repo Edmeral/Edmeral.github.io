@@ -22,7 +22,7 @@ gulp.task('browser-sync', ['sass', 'build'], function() {
         server: {
             baseDir: '_site'
         },
-        browser: "nothing",
+        browser: "nothing", // Using a non existant app (nothing) result in not opening a browser
         port:7890
     });
 });
