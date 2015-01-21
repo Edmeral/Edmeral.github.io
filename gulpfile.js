@@ -29,7 +29,7 @@ gulp.task('browser-sync', ['sass', 'build'], function() {
 
 gulp.task('watch', function() {
     gulp.watch('_sass/*', ['sass', browserSync.reload]);
-    gulp.watch(['index.html', '_config.yml', '*.md', 'feed.xml', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['build', browserSync.reload]);
+    gulp.watch(['index.html', '_config.yml', '*.md', 'feed.xml', '_layouts/*.html', '_includes/*.html', '_posts/*', 'js/*.js'], ['build', browserSync.reload]);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
