@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to create a connected mini weather station using a Raspberry pi and an Arduino board"
+title: "How to create a connected mini weather station using a Raspberry pi and/or an Arduino board"
 ---
 
 **Disclaimer**: This project can be done without the Arduino, I only used it to experiment with tying the two boards together (and because my pi looks better on its case :smile: ).
