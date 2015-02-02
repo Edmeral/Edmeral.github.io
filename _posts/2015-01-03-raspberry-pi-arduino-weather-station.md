@@ -23,5 +23,10 @@ Here is what you'll need:
 * Breadboard
 * Time
 
+# Using The Raspberry Pi
+You need to connect the sensor to raspberry pi like so:
+
+
+
 
 
