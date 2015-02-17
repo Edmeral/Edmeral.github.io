@@ -41,7 +41,7 @@ $ mkdir weather
 $ touch server.js
 ```
 
-The [node-dht-sensor](https://github.com/momenso/node-dht-sensor) package we're going to be using needs the [BCM 2835](http://www.airspayce.com/mikem/bcm2835/) library to be installed in the Raspberry Pi to work properly:
+The [node-dht-sensor](https://github.com/momenso/node-dht-sensor) package we're going to be using needs the [BCM 2835](http://www.airspayce.com/mikem/bcm2835/) library to be installed to work properly:
 
 ```sh
 # Getting the latest version of the library, 
@@ -64,6 +64,8 @@ $ rm -rf bcm2835-1.38
 $ rm bcm2835-1.38.tar.gz 
 ```
 
+Next thing you need to is to connect the raspberry pi, here is a schema:
+![](/images/pi-dht11.png)
 
 
 
