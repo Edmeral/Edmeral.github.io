@@ -67,6 +67,7 @@ $ rm bcm2835-1.38.tar.gz
 Next thing you need to is to connect the raspberry pi, here is a schema:
 ![](/images/pi-dht11.png)
 
+We then create the Node.js program 
 
 
 
