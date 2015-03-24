@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "How to create a connected mini weather station using a Raspberry pi and/or an Arduino board"
+title: "How to create a connected mini weather station using a Raspberry Pi"
 ---
 
-The goal to this tutorial is to create [a simple weather station](http://weather.aissam.me) to check temperature and humidity: We will look at how to get the data from a sensor, send it to the cloud, and then retrieve it to display it on a web page, I'll assume you know how to [SSH](FIXME) into a your Raspberry Pi, and the [basics](FIXME!) of working with an Arduino.
-
+The goal to this tutorial is to create [a simple weather station](http://weather.aissam.me) to check temperature and humidity: We will look at how to get the data from a sensor, send it to the cloud, and then retrieve it to display it on a web page, I'll assume you know how to [SSH](FIXME) into a your Raspberry Pi.
 <br>
 
 ![Arduino + Raspberry Pi](/images/arduinopluspi.jpg)
@@ -15,7 +14,6 @@ The goal to this tutorial is to create [a simple weather station](http://weather
 
 Here is what you'll need:
 
-* An Arduino board (an Arduino UNO would be enough)
 * A Raspberry Pi.
 * DHT11 sensor
 * 10K resistor
@@ -37,6 +35,7 @@ $ sudo dpkg -i node_latest_armhf.deb
 
 # Creating a directory for our project
 $ mkdir weather
+$ cd weather
 # Creating and empty js file (the one we will fill up to get data form our sensor)
 $ touch server.js
 ```
@@ -44,9 +43,9 @@ $ touch server.js
 The [node-dht-sensor](https://github.com/momenso/node-dht-sensor) package we're going to be using needs the [BCM 2835](http://www.airspayce.com/mikem/bcm2835/) library to be installed to work properly:
 
 ```sh
-# Getting the latest version of the library, 
+# Getting the latest version of the library,
 # you might want to change the link to the latest version from the website
-$ wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.38.tar.gz 
+$ wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.38.tar.gz
 
 # Unpacking the file
 $ tar zxvf bcm2835-1.38.tar.gz
@@ -61,13 +60,10 @@ $ sudo make install
 # Cleaning after installation
 $ cd ..
 $ rm -rf bcm2835-1.38
-$ rm bcm2835-1.38.tar.gz 
+$ rm bcm2835-1.38.tar.gz
 ```
 
 Next thing you need to is to connect the raspberry pi, here is a schema:
 ![](/images/pi-dht11.png)
 
-We then create the Node.js program 
-
-
-
+We then create the Node.js program
