@@ -71,4 +71,4 @@ I ended up not using the resistor for the sake of simplicity (so that I wouldn't
 We then create the Node.js program
 
 
-[^1]: This is a footnote
+[^1]: In this case, the resistor plays the role of a "Pull up resistor", you can learn more about it [here](http://forum.arduino.cc/index.php?topic=165562.0).

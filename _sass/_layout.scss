@@ -116,7 +116,7 @@
 .social-header {
     font-size: 24px;
     text-align: center;
-    
+
     a {
         color: $text-color-light;
     }
@@ -286,6 +286,11 @@
             font-size: 18px;
         }
     }
+}
+
+.footnotes {
+  color: $text-color-light;
+  font-size: $base-font-size * 0.9; 
 }
 
 #disqus_thread {
