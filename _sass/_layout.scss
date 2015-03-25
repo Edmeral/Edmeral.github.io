@@ -289,8 +289,12 @@
 }
 
 .footnotes {
+  margin-top: 50px;
   color: $text-color-light;
-  font-size: $base-font-size * 0.9; 
+  font-size: $base-font-size * 0.9;
+}
+.footnotes hr {
+  margin-bottom: 10px;
 }
 
 #disqus_thread {

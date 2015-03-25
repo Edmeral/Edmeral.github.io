@@ -132,7 +132,7 @@ code {
     font-size: 17px;
     text-shadow: 0 .08em #fff;
     background-color: #FAF8F2;
-    font-family: "Ubuntu Mono", Monaco, Consolas,"Andale Mono","DejaVu Sans Mono", monospace; 
+    font-family: "Ubuntu Mono", Monaco, Consolas,"Andale Mono","DejaVu Sans Mono", monospace;
 }
 
 code {
@@ -151,7 +151,11 @@ pre {
     }
 }
 
-
+hr {
+  border: 0;
+  height: 1px;
+  background: $text-color-light;
+}
 
 /**
  * Wrapper

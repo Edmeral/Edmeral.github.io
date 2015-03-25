@@ -64,11 +64,17 @@ $ rm bcm2835-1.38.tar.gz
 ```
 
 Next thing you need to is to connect the raspberry pi, here is a schema:
+
 ![](/images/pi-dht11.png)
 
 I ended up not using the resistor for the sake of simplicity (so that I wouldn't use a breadoboard) so I connected the sensor directly to the Pi, turns out there wasn't a noticeable difference between using the resistor and not using it [^1].
 
-We then create the Node.js program
+[Image here]
+
+We then create the Node.js program:
+
+```js
+```
 
 
 [^1]: In this case, the resistor plays the role of a "Pull up resistor", you can learn more about it [here](http://forum.arduino.cc/index.php?topic=165562.0).
