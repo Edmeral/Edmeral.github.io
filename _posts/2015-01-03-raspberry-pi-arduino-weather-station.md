@@ -6,7 +6,7 @@ title: "How to create a connected mini weather station using a Raspberry Pi"
 The goal to this tutorial is to create [a simple weather station](http://weather.aissam.me) to check temperature and humidity: We will look at how to get the data from a sensor, send it to the cloud, and then retrieve it to display it on a web page, I'll assume you know how to [SSH](FIXME) into a your Raspberry Pi.
 <br>
 
-![Arduino + Raspberry Pi](/images/arduinopluspi.jpg)
+![Arduino + Raspberry Pi](/images/pi.png)
 <br>
 
 
