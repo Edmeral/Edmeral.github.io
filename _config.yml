@@ -9,7 +9,7 @@ twitter_username: Edmeral
 github_username:  Edmeral
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 gems:
