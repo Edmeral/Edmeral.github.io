@@ -1,4 +1,4 @@
-_site
-.sass-cache
-node_modules
-Gemfile.lock
+public/
+.hugo_build.lock
+resources/
+node_modules/

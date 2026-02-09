@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">
+      <span class="hero-name">Aissam</span>
+      <span class="hero-name">Belhachmi</span>
+    </h1>
+    <p class="hero-tagline">{{ .Site.Params.description }}</p>
+    <div class="hero-links">
+      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+      {{ with .Site.Params.email }}<a href="mailto:{{ . }}">Contact</a>{{ end }}
+      <!-- <a href="/CV_en.pdf">CV</a> -->
+    </div>
+  </div>
+</section>
+
+<section class="recent-posts">
+  <h2 class="section-title">Writings</h2>
+  <div class="post-list">
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+    <article class="post-item">
+      <a href="{{ .Permalink }}" class="post-link">
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <h2 class="post-title">{{ .Title }}</h2>
+        <p class="post-excerpt">{{ .Summary | plainify | truncate 180 }}</p>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

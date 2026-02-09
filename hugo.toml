@@ -1,0 +1,18 @@
+baseURL = "https://aissam.me/"
+languageCode = "en-us"
+title = "Aissam Belhachmi"
+theme = "aissam"
+
+[params]
+  description = "Software Engineer"
+  github = "https://github.com/Edmeral"
+  email = "edmeral.aissam@gmail.com"
+
+[markup]
+  [markup.highlight]
+    style = "monokailight"
+    lineNos = false
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
