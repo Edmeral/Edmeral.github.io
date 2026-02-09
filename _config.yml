@@ -4,7 +4,7 @@ email: edmeral.aissam@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Still looking for an original description
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://aissam.me" # the base hostname & protocol for your site
+url: "https://aissam.me" # the base hostname & protocol for your site
 twitter_username: Edmeral
 github_username:  Edmeral
 
@@ -14,5 +14,5 @@ redcarpet:
   extensions: [footnotes]
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-gems:
+plugins:
   - jemoji
