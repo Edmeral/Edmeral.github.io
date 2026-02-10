@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="page-content">
-  <h1 class="page-title">{{ .Title }}</h1>
+  <h1 class="page-title">{{ if eq .Section "posts" }}Writings{{ else }}{{ .Title }}{{ end }}</h1>
   <div class="post-list">
     {{ range .Pages }}
     <article class="post-item">

@@ -1,16 +1,15 @@
 {{ define "main" }}
 <section class="hero">
   <div class="hero-inner">
-    <h1 class="hero-title">
-      <span class="hero-name">Aissam</span>
-      <span class="hero-name">Belhachmi</span>
-    </h1>
-    <p class="hero-tagline">{{ .Site.Params.description }}</p>
-    <div class="hero-links">
-      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
-      {{ with .Site.Params.email }}<a href="mailto:{{ . }}">Contact</a>{{ end }}
-      <!-- <a href="/CV_en.pdf">CV</a> -->
+    <div class="hero-name-block">
+      <span class="hero-arabic" aria-hidden="true"><span class="arabic-first">عصام</span><br><span class="arabic-last">بلهاشمي</span></span>
+      <h1 class="hero-title">
+        <span class="hero-name">Aissam</span>
+        <span class="hero-name">Belhachmi</span>
+      </h1>
+      <span class="hero-phonetic">/ʕi.sˤɑːm/</span>
     </div>
+    <p class="hero-tagline">{{ .Site.Params.description }}</p>
   </div>
 </section>
 

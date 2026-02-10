@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-title">{{ .Site.Title }}</a>
+    <a href="/" class="site-title">{{ if .IsHome }}AB{{ else }}{{ .Site.Title }}{{ end }}</a>
     <nav class="site-nav">
       <a href="/posts/">Writings</a>
       <!-- <a href="/CV_en.pdf">CV</a> -->

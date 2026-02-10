@@ -12,7 +12,7 @@ theme = "aissam"
   [markup.highlight]
     style = "monokailight"
     lineNos = false
-    noClasses = false
+    noClasses = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
