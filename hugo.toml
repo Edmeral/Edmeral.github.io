@@ -11,9 +11,8 @@ enableEmoji = true
 
 [markup]
   [markup.highlight]
-    style = "monokailight"
     lineNos = false
-    noClasses = true
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
